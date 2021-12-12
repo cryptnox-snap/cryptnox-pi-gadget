@@ -118,6 +118,7 @@ config-core: $(DESTDIR)/boot-assets
 	mkenvimage -r -s 4096 -o $(DESTDIR)/boot.sel - < /dev/null
 	cp -a configs/core/config.txt.$(ARCH) $(DESTDIR)/boot-assets/config.txt
 	cp -a configs/core/cmdline.txt $(DESTDIR)/boot-assets/cmdline.txt
+	cp -a configs/core/blacklist-pn533.txt $(DESTDIR)/boot-assets/blacklist.txt
 
 config-classic: $(DESTDIR)/boot-assets
 	cp -a configs/classic/*.txt $(DESTDIR)/boot-assets/
