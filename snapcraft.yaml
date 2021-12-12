@@ -1,5 +1,5 @@
 name: pi
-version: 20-1
+version: 20-2
 summary: Raspberry Pi gadget
 description: |
   Support files for booting Raspberry Pi.
@@ -54,7 +54,7 @@ parts:
   psplash:
     after: [psplash-local]
     source: git://git.yoctoproject.org/psplash
-    source-commit: 2015f7073e98dd9562db0936a254af5ef56356cf
+      #    source-commit: 2015f7073e98dd9562db0936a254af5ef56356cf
     plugin: nil
     override-build: |
       set -x
@@ -73,7 +73,7 @@ parts:
       if ! $(echo "$SPLASH" | grep -q ^/); then
         SPLASH="${TREE}/${SPLASH}"
       fi
-      git apply ${TREE}/psplash.patch
+      git apply ${TREE}/psplash-001.patch
       ${TREE}/font-gen.sh "$FONT"
       ./make-image-header.sh "$SPLASH" CORE psplash-core
       aclocal

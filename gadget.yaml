@@ -46,7 +46,6 @@ volumes:
           - source: boot-assets/blacklist.txt
             target: /etc/modprobe.d/blacklist-pn533.conf
 
-
 connections:
   # cryptnox
   - plug: M3WW8C4m1SMo3celf9LfeqIiaybskgZO:hardware-observe
