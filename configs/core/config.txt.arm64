@@ -21,6 +21,7 @@ dtoverlay=vc4-fkms-v3d,cma-128
 
 # Enable audio output, I2C and SPI interfaces on the GPIO header
 dtparam=audio=on
+dtparam=i2c1=on
 dtparam=i2c_arm=on
 dtparam=spi=on
 

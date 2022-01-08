@@ -1,4 +1,5 @@
 FRIENDLYNAME      "IFD-NFC"
 DEVICENAME        /dev/i2c-1
-LIBPATH           /snap/cryptnox/current/usr/lib/libifdnfc.so
+#LIBPATH           /snap/cryptnox/current/usr/lib/libifdnfc.so
+LIBPATH 	  /snap/cryptnox/current/usr/lib/pcsc/drivers/ifdnfc.bundle/Contents/Linux/libifdnfc.so.0.1.4
 CHANNELID         1

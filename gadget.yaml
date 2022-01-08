@@ -46,13 +46,15 @@ volumes:
           - source: boot-assets/blacklist.txt
             target: /etc/modprobe.d/blacklist-pn533.conf
           - source: boot-assets/libifdnfc
-            target: /etc/reader.conf.d/ifdnfc.conf
-          - source: boot-assets/nfc.conf
-            target: /etc/nfc.conf
+            target: /etc/reader.conf.d/libifdnfc
+          - source: boot-assets/libnfc.conf
+            target: /etc/libnfc.conf
+          - source: boot-assets/i2c-modules
+            target: /etc/modules-load.d/rpi-i2c.conf
 
 connections:
   # cryptnox
   - plug: M3WW8C4m1SMo3celf9LfeqIiaybskgZO:hardware-observe
   - plug: M3WW8C4m1SMo3celf9LfeqIiaybskgZO:raw-usb
-  - plug: M3WW8C4m1SMo3celf9LfeqIiaybskgZO:i2c
-  - slots: pi:i2c-1
+  - plug: M3WW8C4m1SMo3celf9LfeqIiaybskgZO:i2c-1
+    #  - slots: pi:i2c-1
