@@ -1,3 +1,10 @@
+# Raspberry Pi "Cryptnox" Gadget Snap
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/cryptnox-pi-gadget)
+
+- i2c 
+- pn452
+- ACR
+
 # Raspberry Pi "Universal" Gadget Snap
 
 This repository contains the source for an Ubuntu Core gadget snap that runs
