@@ -119,6 +119,8 @@ config-core: $(DESTDIR)/boot-assets
 	cp -a configs/core/config.txt.$(ARCH) $(DESTDIR)/boot-assets/config.txt
 	cp -a configs/core/cmdline.txt $(DESTDIR)/boot-assets/cmdline.txt
 	cp -a configs/core/blacklist-pn533.txt $(DESTDIR)/boot-assets/blacklist.txt
+	cp -a configs/core/libifdnfc $(DESTDIR)/boot-assets/libifdnfc
+	cp -a configs/core/nfc.conf $(DESTDIR)/boot-assets/nfc.conf
 
 config-classic: $(DESTDIR)/boot-assets
 	cp -a configs/classic/*.txt $(DESTDIR)/boot-assets/

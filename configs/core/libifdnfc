@@ -1,0 +1,4 @@
+FRIENDLYNAME      "IFD-NFC"
+DEVICENAME        /dev/i2c-1
+LIBPATH           /snap/cryptnox/current/usr/lib/libifdnfc.so
+CHANNELID         1
